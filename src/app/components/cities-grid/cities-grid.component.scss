@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 20px;
+}
+
+.city {
+  background-color: var(--color-bg-accent);
+  max-width: 320px;
+  border-radius: 8px;
+  &__title {
+    display: flex;
+    gap: 8px;
+    padding-top: 12px;
+    padding-left: 20px;
+  }
+  &__image {
+    border-radius: 8px 8px 0 0;
+  }
+  &__favorite {
+    cursor: pointer;
+  }
+  &__descpiption {
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-bottom: 32px;
+  }
+}

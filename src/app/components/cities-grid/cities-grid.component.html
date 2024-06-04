@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="city" *ngFor="let city of cities">
+    <img class="city__image" [src]="city.image" [alt]="city.name" />
+
+    <div class="city__title">
+      <h3 class="city__text">{{ city.name }}</h3>
+      <img
+        (click)="favoriteToggle(city.id)"
+        class="city__favorite"
+        src="./assets/icons/en-star.svg"
+        alt="star"
+      />
+    </div>
+    <p class="city__descpiption">{{ city.description }}</p>
+  </div>
+</div>

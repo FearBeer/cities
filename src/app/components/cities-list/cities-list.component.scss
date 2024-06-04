@@ -1,0 +1,22 @@
+.city {
+  display: flex;
+  gap: 28px;
+  padding: 20px 0;
+  border-top: 1px solid var(--color-border);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+  &__title {
+    display: flex;
+    gap: 8px;
+  }
+  &__favorite {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,11 @@
+.city-wrapper {
+  display: flex;
+  height: 28px;
+  gap: 8px;
+  align-items: center;
+
+  &__favorite {
+    width: 28px;
+    height: 28px;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="city-wrapper">
+  <h3 class="city-wrapper__title">{{ city.name }}</h3>
+  <img
+    class="city-wrapper__favorite"
+    src="./assets/icons/en-star.svg"
+    alt="star"
+  />
+</div>
+<p class="descpiption">{{ city.description }}</p>
+
+<img class="image" [src]="city.image" [alt]="city.name" />
