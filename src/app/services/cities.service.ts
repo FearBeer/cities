@@ -18,7 +18,7 @@ export class CitiesService {
       name: 'Москва',
       description: 'Столица России, город федерального значения',
       image: 'https://screenshots.enkod.tech/ilya_novikovG6KIVEp3v160xCMY.png',
-      favorite: false,
+      favorite: true,
     },
     {
       id: 1,

@@ -1,13 +1,14 @@
 .header {
   width: 100%;
-  height: 117px;
-  padding: 40px 60px 44px 60px;
+  height: clamp(5rem, 4.339rem + 3.304vw, 7.313rem);
+  padding: clamp(1.25rem, 0.893rem + 1.786vw, 2.5rem)
+    clamp(1.25rem, 0.536rem + 3.571vw, 3.75rem);
   background-color: var(--color-bg-accent);
 
   &__title {
     color: var(--color-text);
     font-weight: 500;
-    font-size: 28px;
+    font-size: clamp(1.125rem, 0.946rem + 0.893vw, 1.75rem);
     line-height: 32.81px;
     font-family: "Roboto-500";
   }

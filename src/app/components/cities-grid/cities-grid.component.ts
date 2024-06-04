@@ -1,12 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { CitiesService, City } from '../../services/cities.service';
-import { NgFor } from '@angular/common';
-import { CityComponent } from '../city/city.component';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-cities-grid',
   standalone: true,
-  imports: [NgFor, CityComponent],
+  imports: [NgFor],
   templateUrl: './cities-grid.component.html',
   styleUrl: './cities-grid.component.scss',
 })
