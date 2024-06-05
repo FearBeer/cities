@@ -27,6 +27,7 @@
     cursor: pointer;
   }
   &__text {
+    font-family: "Roboto-500";
     color: var(--color-text);
     font-size: clamp(0.82rem, 0.679rem + 0.357vw, 1rem);
   }

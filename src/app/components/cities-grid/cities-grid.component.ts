@@ -5,7 +5,7 @@ import { NgFor, NgIf } from '@angular/common';
 @Component({
   selector: 'app-cities-grid',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgIf],
   templateUrl: './cities-grid.component.html',
   styleUrl: './cities-grid.component.scss',
 })

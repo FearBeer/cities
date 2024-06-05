@@ -43,13 +43,19 @@
   color: var(--color-bg);
   cursor: pointer;
   transition: all 0.3s;
-  &:hover {
-    background-color: var(--color-bg);
-    color: var(--color-button-create);
-    // text-shadow: 0.5px 0.5px 1px var(--color-button-create);
-    box-shadow: 1px 1px 20px var(--color-button-create);
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-bg);
+      color: var(--color-button-create);
+      // text-shadow: 0.5px 0.5px 1px var(--color-button-create);
+      box-shadow: 1px 1px 20px var(--color-button-create);
+    }
   }
 }
 .content {
   margin-top: 16px;
+}
+
+.checked {
+  background-color: var(--color-bg-accent);
 }

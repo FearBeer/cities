@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: clamp(0.5rem, 0.357rem + 0.714vw, 1rem);
   row-gap: 20px;
 }
@@ -31,6 +32,7 @@
     font-size: clamp(0.75rem, 0.714rem + 0.179vw, 0.875rem);
   }
   &__text {
+    font-family: "Roboto-500";
     color: var(--color-text);
     font-size: clamp(0.82rem, 0.679rem + 0.357vw, 1rem);
   }

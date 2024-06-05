@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { CitiesListComponent } from './components/cities-list/cities-list.component';
 import { CitiesGridComponent } from './components/cities-grid/cities-grid.component';
-import { NgIf } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 import { CitiesService, City } from './services/cities.service';
 
 @Component({
@@ -15,6 +15,7 @@ import { CitiesService, City } from './services/cities.service';
     HeaderComponent,
     CitiesListComponent,
     CitiesGridComponent,
+    NgClass,
   ],
   providers: [CitiesService],
   templateUrl: './app.component.html',

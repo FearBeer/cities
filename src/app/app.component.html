@@ -2,10 +2,18 @@
 <main class="main">
   <div class="logic">
     <div class="toggler">
-      <button class="toggler__btn toggler__btn_list" (click)="setListView()">
+      <button
+        class="toggler__btn toggler__btn_list"
+        (click)="setListView()"
+        [ngClass]="{ checked: isList }"
+      >
         Список
       </button>
-      <button class="toggler__btn toggler__btn_grid" (click)="setGridView()">
+      <button
+        class="toggler__btn toggler__btn_grid"
+        (click)="setGridView()"
+        [ngClass]="{ checked: isGrid }"
+      >
         Плитка
       </button>
     </div>
