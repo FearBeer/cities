@@ -18,7 +18,7 @@
       </button>
     </div>
 
-    <button class="add-btn" (click)="addCity()">Создать</button>
+    <app-add-button (click)="addCity()"></app-add-button>
   </div>
   <section class="content">
     <app-cities-list *ngIf="isList" [cities]="cities"></app-cities-list>

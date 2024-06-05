@@ -5,17 +5,19 @@ import { CitiesListComponent } from './components/cities-list/cities-list.compon
 import { CitiesGridComponent } from './components/cities-grid/cities-grid.component';
 import { NgClass, NgIf } from '@angular/common';
 import { CitiesService, City } from './services/cities.service';
+import { AddButtonComponent } from './add-button/add-button.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     NgIf,
+    NgClass,
     RouterOutlet,
     HeaderComponent,
     CitiesListComponent,
     CitiesGridComponent,
-    NgClass,
+    AddButtonComponent,
   ],
   providers: [CitiesService],
   templateUrl: './app.component.html',

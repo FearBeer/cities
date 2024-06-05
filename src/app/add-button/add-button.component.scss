@@ -1,0 +1,18 @@
+.add-btn {
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 4px;
+  border: solid 1px var(--color-button-create);
+  background-color: var(--color-button-create);
+  color: var(--color-bg);
+  cursor: pointer;
+  transition: all 0.3s;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-bg);
+      color: var(--color-button-create);
+      // text-shadow: 0.5px 0.5px 1px var(--color-button-create);
+      box-shadow: 1px 1px 20px var(--color-button-create);
+    }
+  }
+}
