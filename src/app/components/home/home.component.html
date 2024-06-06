@@ -1,0 +1,29 @@
+<div class="logic">
+  <div class="toggler">
+    <button
+      class="toggler__btn toggler__btn_list"
+      (click)="setListView()"
+      [ngClass]="{ checked: isList }"
+    >
+      Список
+    </button>
+    <button
+      class="toggler__btn toggler__btn_grid"
+      (click)="setGridView()"
+      [ngClass]="{ checked: isGrid }"
+    >
+      Плитка
+    </button>
+  </div>
+
+  <a [routerLink]="['/create-city']"><app-add-button></app-add-button></a>
+</div>
+<section class="content">
+  <app-cities-list *ngIf="isList" [cities]="cities"></app-cities-list>
+  <app-cities-grid *ngIf="isGrid" [cities]="cities"></app-cities-grid>
+  <h1 *ngIf="cities.length === 0">
+    Это сообщения значит что, то что-то пошло не так... Мы уже это чиним, а пока
+    попробуйте обновить страницу или запустить db.json(версия:
+    1.0.0-alpha.23)(json-server --watch db.json) или подождите
+  </h1>
+</section>

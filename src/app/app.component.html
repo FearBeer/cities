@@ -1,29 +1,4 @@
-<app-header [text]="text"></app-header>
+<app-header [text]="headerText"></app-header>
 <main class="main">
-  <div class="logic">
-    <div class="toggler">
-      <button
-        class="toggler__btn toggler__btn_list"
-        (click)="setListView()"
-        [ngClass]="{ checked: isList }"
-      >
-        Список
-      </button>
-      <button
-        class="toggler__btn toggler__btn_grid"
-        (click)="setGridView()"
-        [ngClass]="{ checked: isGrid }"
-      >
-        Плитка
-      </button>
-    </div>
-
-    <app-add-button (click)="addCity()"></app-add-button>
-  </div>
-  <section class="content">
-    <app-cities-list *ngIf="isList" [cities]="cities"></app-cities-list>
-    <app-cities-grid *ngIf="isGrid" [cities]="cities"></app-cities-grid>
-  </section>
+  <router-outlet></router-outlet>
 </main>
-
-<router-outlet />

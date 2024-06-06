@@ -14,7 +14,7 @@ export class CitiesListComponent {
   constructor(private service: CitiesService) {}
 
   favoriteToggle(id: number) {
+    this.cities[id].favorite = !this.cities[id].favorite;
     this.service.favoriteToggle(id);
-    console.log(this.cities[id]);
   }
 }
